@@ -1,0 +1,55 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Container for the game */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid container to align buttons in a 3x3 grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* 3 columns */
+    grid-template-rows: repeat(3, 150px); /* 3 rows */
+    gap: 5px;
+}
+
+/* Individual cell (button) styling */
+.cell {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 48px; /* Larger font size for X or O */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell:active {
+    background-color: #e0e0e0;
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
