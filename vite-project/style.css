@@ -53,3 +53,8 @@ body {
     background-color: #e0e0e0;
     transform: scale(0.98); /* Slight shrink effect on click */
 }
+
+.img {
+    width: 150px;
+    height: 150px;
+}
