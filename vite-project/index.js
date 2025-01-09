@@ -61,9 +61,13 @@ function handleMove(event) {
     const img = document.createElement("img");
     if (player === 1) {
         img.src = xImageURL;
+        img.style.width = "150px";  
+        img.style.height = "150px"; 
         cell.appendChild(img);
     } else {
         img.src = oImageURL;
+        img.style.width = "150px";  
+        img.style.height = "150px"; 
         cell.appendChild(img);
     }
 
